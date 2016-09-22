@@ -1,0 +1,5 @@
+#!/usr/local/bin/fish
+
+for i in (find functions -type f)
+    ln -s (pwd)/$i ~/.config/fish/$i
+end
